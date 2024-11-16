@@ -1,0 +1,108 @@
+
+html{
+
+}
+
+.title{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.section-title{
+  text-align: center;
+}
+
+header{
+  width: 100%;
+
+}
+
+main{
+
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-wrap: nowrap;
+
+  width: 80%;
+
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+section{
+  width: 100%;
+}
+
+.scaled{
+  border: 1px solid black;
+
+  padding: 10px;
+
+  width: 150px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  border-radius: 0% 20% 0% 0%
+
+
+
+}
+/* Scale*/
+.scaled.one{
+  background: linear-gradient(90deg,#ff2222,white);
+  transform: scale(1,1);
+}
+
+.scaled.two{
+  background: linear-gradient(90deg,#ff2222,white);
+  transform: scale(-1,1);
+
+}
+
+.scaled.three{
+  background: linear-gradient(90deg,#ff2222,white);
+  transform: scale(-1,-1);
+}
+
+
+/* ScaleX*/
+.scaled.four{
+  background: linear-gradient(90deg,#22ff22,white);
+  transform: scaleX(1);
+
+}
+
+.scaled.five{
+  background: linear-gradient(90deg,#22ff22,white);
+  transform: scaleX(-1);
+}
+
+.scaled.six{
+  background: linear-gradient(90deg,#22ff22,white);
+  transform: scaleX(0.5);
+}
+
+/* ScaleY*/
+
+.scaled.seven{
+  background: linear-gradient(90deg,#2222ff,white);
+  transform: scaleY(1);
+
+}
+
+.scaled.eight{
+  background: linear-gradient(90deg,#2222ff,white);
+  transform: scaleY(-1);
+}
+
+.scaled.nine{
+  background: linear-gradient(90deg,#2222ff,white);
+  transform: scaleY(0.5);
+}

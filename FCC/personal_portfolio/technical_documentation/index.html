@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "title" content = "Documentation page">
+    <meta name = "keyword" content = "documentation, page">
+    <title>Introduction to python</title>
+
+  </head>
+
+  <!--nav element ,with id of'nabvbar'
+  navbarhae head element with text describing topic of
+  the documentation -->
+
+  <nav id="navbar">
+    
+    <!--header with <a> element-->
+    <img src="https://banner2.cleanpng.com/20180325/kpq/kisspng-python-logo-programmer-fierce-python-cliparts-5ab7bde1954e21.4104715915219911376116.jpg" height="75" </img>
+    <header>Introduction to python</header>    
+   <!-- <header><a href="">Main topic<a></header> -->
+
+    <!--nav bar has <a> for each section in 'main-section'
+      use <li> for each element <a>-->
+
+    <ul id = "list-nav">  
+      <li><a class ="nav-link" href="#Install_python">Install python</a></li>
+      <li><a class ="nav-link" href="#Hello_world!">Hello world!</a></li>
+      <li><a class ="nav-link" href="#Third_section">Third section</a></li>
+      <li><a class ="nav-link" href="#Fourth_section">Fourth section</a></li>
+      <li><a class ="nav-link" href="#Fifth_section">Fifth section</a></li>
+    </ul>
+
+  </nav>
+
+  <body>
+    
+
+    <!--main element,contains pages's
+    main content, Documentation-->
+    <main id="main-doc">
+      
+      <!--Sections for topics, main-etion class
+      for each, header with topic description for each
+      
+      _Each header have id corresponding to his topic.
+      !! for 'space' use instead '_' for id !! 
+
+      _'.main-section' element contain (not each) :
+        _<p>>
+        _<li>
+        _<code> -->
+
+      <section class ="main-section" id= "Install_python">
+      
+
+      <header>Install python</header>  
+        
+        <p>Python can be installed on windows ,mac and linux.You can use either installer or use command line.</br>The latest verson of <strong>python is 3.12.4</strong> when these line are written.
+       </br> <span class="md5">If you use aptitude package manager with debian you won't have the latest version.</span></p>
+
+       <div class="separator"></div>
+
+        <h3>Windows,Mac OS and Linux (source)</h3>
+        <p>Click <a class="hyperlink" href="https://www.python.org/downloads/windows/">here</a> to reach the official python webpage for <strong>windows</strong> release.</p>
+        <p>Click <a class="hyperlink" href="https://www.python.org/downloads/macos/">here</a> to reach the official python webpage for<strong> Mac OS</strong> release.</p>
+        <p>Click <a class="hyperlink" href="https://www.python.org/downloads/macos/">here</a> to reach the official python webpage for<strong> Linux</strong> (source) release.</p>
+        <p>Or you can access Python 3.12.4 version for all OS from the table below:</p>
+
+
+        <table id="distro">
+          <theader>
+            <th>Version</th>
+            <th>Operating system</th>
+            <th>Description</th>
+            <th>MD5 Sum</th>
+            <th>File Size</th>
+            <th>GPG</th>
+            <th>Sigstore</th>
+            <th>SBOM</th>
+          </theader>
+          <caption>Python 3.12.4 releases</caption>
+          <tbody>
+            <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tgz">Gzipped source tarball</a></td>
+              <td>Source release</td>
+              <td></td>
+              <td class="md5">ad819dab6d165937138daa9e51ccb54</td>
+              <td>26.0 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tgz.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tgz.sigstore">.sigstore</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tgz.spdx.json">SPDX</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz">XZ compressed source tarball</a></td>
+              <td>Source release</td>
+              <td></td>
+              <td class="md5">d68f25193eec491eb54bc2ea664a05bd</td>
+              <td>19.7 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz.sigstore">.sigstore</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz.spdx.json">SBOM</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz">macOS 64-bit universal2 installer 	</a></td>
+              <td>macOS</td>
+              <td>for macOS 10.9 and later</td>
+              <td class="md5">b6de6aea008605f5d4096014c2ad3c43</td>
+              <td>44.0 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-macos11.pkg.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-macos11.pkg.sigstore">.sigstore</a></td>
+              <td><a href=></td>
+            </tr>
+             <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tar.xz">Windows installer (64-bit)</a></td>
+              <td>Windows</td>
+              <td>Recommended</td>
+              <td class="md5">f3df1be26cc7cbd8252ab5632b62d740</td>
+              <td>25.5 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-amd64.exe.sigstore">.sigstore</a></td>
+              <td><a href="25.5 MB">SBOM</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-arm64.exe">Windows installer (ARM64)</a></td>
+              <td>Windows</td>
+              <td>Recommended</td>
+              <td class="md5">f3c2064f11c5f4eee475928a0fc62199</td>
+              <td>24.8 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-arm64.exe.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-arm64.exe.sigstore">.sigstore</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-arm64.exe.spdx.json">SBOM</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-arm64.exe">Windows embeddable package (64-bit)</a></td>
+              <td>Windows</td>
+              <td>Recommended</td>
+              <td class="md5"> 	8db759b337ac4f6966f52b3662c05dd7</td>
+              <td>10.6 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-amd64.zip.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-amd64.zip.sigstore">.sigstore</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-amd64.zip.spdx.json">SBOM</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-win32.zip">Windows embeddable package (32-bit)</a></td>
+              <td>Windows</td>
+              <td></td>
+              <td class="md5">19691145551a41114b32a556bb2bcb89</td>
+              <td>9.4 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-win32.zip.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-win32.zip.sigstore">.sigstore</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-win32.zip.spdx.json">SBOM</td>
+            </tr>
+            <tr>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4-embed-win32.zip">Windows installer (32 -bit)</a></td>
+              <td>Windows</td>
+              <td></td>
+              <td class="md5">9c98b529889aba04ca5ec1c6b5f986f</td>
+              <td>24.3 MB</td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4.exe.asc">SIG</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4.exe.sigstore">.sigstore</a></td>
+              <td><a href="https://www.python.org/ftp/python/3.12.4/python-3.12.4.exe.spdx.json">SBOM</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="separator"></div>
+       
+        <h3>Linux</h3>
+        <h4 class="underline">Install with 'aptitude' (do not install the latest version):</h4>
+        <section class="subsection">
+
+          
+          <p c>If you're on Debian you can use the aptitude package manager typing the following line of command in your terminal: </p>
+          
+          <p class="underline">1.First we going to update the package repositories:</p>
+
+          <code><span class="keyword">$ sudo apt-get</span> update</code>
+          
+          <p class="underline">2.Next we need to install some dependancies:</p>
+          <code><span class="keyword">$ sudo apt-get install</span> build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev</code>
+          <p class="underline">3.Now install python:</p> 
+          <code><span class="keyword">$ sudo apt-get install</span> 
+          python3</code>
+        </section>
+
+        <h4 class="underline">Download with 'wget' and compile binary with 'make'(install the latest version):</h4> 
+        <section class="subsection">
+          
+          <p class="underline">1.Download the binary file from the offical python download page using 'wget':</p>
+          <p class="md5">'wget' is a package used to download ressources from an http server with the terminal.</p>
+
+          <code class=""><span class="keyword">$ wget</span> https://www.python.org/ftp/python/3.12.4/Python-3.12.4.tgz </code>
+          
+          <p class="underline">2.Uncompress the tarball using the following command line:</p>
+          <p class="md5">'Tar' is tool to gather and compress file in one archive called 'tarball'.</p>
+          <code class=""><span class="keyword">$ tar</span> -xvf Python-3.12.4.tgz </code>
+
+          <p class="underline">3.Use 'cd' command to change the current working directory to the 'python3' folder:</p>
+          <code><span class="keyword">$ cd</span> python-3.11.1</code>
+
+          <p class="underline">4.Check if all dependencies to install python 3.11 are ok:</p>
+          <code><span class="keyword">$ sudo</span> ./configure --enable-optimizations</code>
+
+          <p class="underline">5.Run the make command to compile the source code:</p>
+          <code><span class="keyword">$ sudo make</span> -j 2</code>
+
+          <p class="underline">6.Now we can install python:</p>
+          <code><span class="keyword">$ sudo make</span> altinstall</code>
+        </section>
+
+
+        <div class="separator"></div>
+
+
+        <h3>Mac OS</h3>
+        <h4 id="workinprog">Work in progress</h4>
+
+        
+
+        <p>For others plateform click <a href="https://www.python.org/download/other/" class="hyperlink">here</a></p>.
+      </section >
+<!--________________________________________________________________________-->
+      <section class ="main-section" id = "Hello_world!">
+      
+          <header>Hello world!</header>
+          <p>In this section we gonna make our first program in python and review some basic  general topic of programing language.</p>
+          <div class="separator"></div>
+        <section class="subsection">
+          <p>This code below print the message <code class="embedded">'hello world'</code> on screen: </p>
+            <p>Code:</p>
+            <code><span class="keyword">print</span>("hello ,world!)</code>
+
+            <p>Output:</p>
+
+            <samp class="execution">>hello, world!</samp>
+
+
+            
+            <p></br>The first word is a function called <span class="embedded">print()</span>.It is used to print text on standard output which is the screen here. 
+
+            </br>The text between quote is called a string of characters <code class="embedded">'hello world'</code>. </br>A string of charactes can contain letter,number and symbol.</br></br>
+          </section>
+          <div class="separator"></div>
+
+          <section class="subsection">
+            <p>You can also print others values like the result of a math expression:</p>
+
+            <code><span class="keyword">print</span>( <span class="number">4</span> <span class="operator">+</span> <span class="number">2</span>)</code>
+
+            <samp class="execution">>6</samp>
+
+            
+        
+
+        <p>As you notice , the expression in the code above <code class="embedded">4 <span class="operator">+</span> 2</code> has no quotes despite being surrounded by parantheses.The reason is the content of the data that we want to print.</br></br>In the first example we printed a <strong>string of characters</strong>, which must be between quotes whereas in the second example we printed a <strong>integer</strong> value.</br></br>During the execution, we can see that the program print the value <code class="embedded execution">6</code> which is the result of <code class="embedded">4 <span class="operator">+</span> 2</code> and not the equation itself .Python do the addition first and then print the result.</br></br>You can use several types of operators for math int your print functionand it will be printed when you execute the code as long it has no quotes. </p>
+       </section>
+        
+      
+         
+      </section>
+        
+
+      <!--________________________________________________________________________-->
+        
+      <section class ="main-section" id = "Third_section">
+        <header>Third section</header>
+          
+        <p>Paragraph</p>
+        <code>some code</code>
+        <ul>list:
+          <li>element</li>
+          <li>element</li>
+          <li>element</li>
+          </ul>
+      </section>
+        
+      <section class ="main-section" id = "Fourth_section">
+        <header>Fourth section</header>
+
+        <p>Paragraph</p>
+        <code>some code</code>
+        <ul>list:<li>element</li></ul>
+      </section>
+      
+      <section class ="main-section" id = "Fifth_section">
+        <header>Fifth section</header>
+
+        <p>Paragraph</p>
+        <code>some code</code>
+        <ul>list:<li>element</li></ul>
+      </section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+  </body>
+
+
+  </head>

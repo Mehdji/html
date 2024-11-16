@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Product landing page</title>
+    <script src="https://kit.fontawesome.com/b90a9ecdfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"/>
+
+  </head>
+
+  <body>
+
+  
+
+    <header id="header"> 
+
+      <!--<i id="header-img" class="fa-solid fa-video"></i>-->
+      <img id="header-img" src="https://w7.pngwing.com/pngs/46/326/png-transparent-camera-logo-cameras-electronics-text-photography.png"
+      alt="image of a camera" height="100px" >
+      <h1 id="header-company-title" class="title" >Milestone Media</h1>
+      
+      <nav id="nav-bar"> 
+        <ul class="list-nav">
+          <li><a  class="nav-link" href="#hero" id="#info"><i class="fa-solid fa-circle-info"></i> Info</a></li>
+          <li><a  class="nav-link" href="#work" id="#work"><i class="fa-solid fa-tv"></i> Work</a></li>
+          <li><a  class="nav-link" href="#price" id="#price"><i class="fa-solid fa-hand-holding-dollar"></i> Price</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section id="hero" class="hero" id="first-paragraph">
+        <h1 class="title" id="#info"><i class="fa-solid fa-video"></i> Capturing Life's Moments, Framing Your <span class="highlight">Future</span></h1>
+
+        <p>Milestone Media specializes in crafting personalized video narratives that celebrate <span class="focus">life's most precious moments</span> and showcase businesses in their best light. 
+          Our skilled team of videographers and editors blend creativity with <span class="focus">technical expertise</span> to produce stunning wedding films, heartwarming birthday documentaries,
+          and compelling promotional videos for companies. We pride ourselves on capturing the essence of each event or brand, 
+          transforming fleeting moments into timeless memories and turning business visions into visual stories.</p> 
+         
+          <img class="illustration" src="https://media.istockphoto.com/id/1403892022/photo/african-vlogger-video-shooting-with-cameramen.jpg?s=612x612&w=0&k=20&c=IRcQNarp1bnvo6Bx65JkayqGWuufCrhJSogZUfsbDMk=" alt="Picture of a video shooting" height="300px">
+          
+          <hr>
+          <p class="quote">Turning business visions into visual stories</p>
+          <hr>
+
+          <p>At Milestone Media, we don't just record events - we create cinematic experiences that resonate with emotion and impact, 
+          helping our clients relive their special days or elevate their business presence with professional, <span class="focus">high-quality video content.</span></p>
+          
+      </section>
+
+      <section id="work"  class="work">
+        
+        <h1 class="title"><i class="fa-brands fa-youtube"></i> Explore a selection of our <span class="highlight">signature</span> creations</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/TlMwwsYOXMI?si=x33Ro6xwC6h0cNi-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </section>
+
+      <section id="price">
+
+        <h1 class="title"><i class="fa-solid fa-handshake"></i> We welcome the opportunity to <span class="highlight">explore</span> your creative endeavor</h2>
+        
+        <div class = "div-form">
+         
+          <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <div class="text-input-form">
+              <label for="email">Email address:</label>
+              <input name="email" type="email" id="email" placeholder="Email address here">
+
+              <label for="phone-number">Phone number:</label>
+              <input name="phone-number" type="tel" id="phone-number" pattern="[0-9]" placeholder="Phone number here">
+            </div>
+            <input type="submit" value="Contact me" id="submit">
+          </form>
+
+        </div>
+
+        <div id="price-selection">
+
+          <div class="price-frame" id="price-wedding">
+            
+            <h3><i class="fa-solid fa-champagne-glasses"></i>Wedding film</h3>
+            <p>Capture your special day in cinematic splendor with our expert wedding film production, 
+              turning your precious moments into a timeless masterpiece you'll treasure for a lifetime.</p>
+            <p class="price">From 399€</p>
+          </div>
+          <div class="price-frame" id="price-commercial">
+            <h3><i class="fa-solid fa-rectangle-ad"></i>Promotional film</h3>
+            <p>Transform your brand's story into compelling visual content with our 
+              cutting-edge corporate video production, 
+              designed to engage your audience and drive measurable business results.</p>
+            <p class="price">From 199€</p>
+          </div>
+          <div class="price-frame" id="price-birthday">
+            <h3><i class="fa-solid fa-cake"></i>Birthday film</h3>
+            <p>Turn your birthday celebration into a cinematic keepsake with our personalized filmmaking, 
+              capturing the joy, laughter, and cherished moments in a way that lets you relive the magic 
+              year after year.</p>
+            <p class="price">From 149€</p>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    
+  </body>
+
+  <footer>
+    <a href="#terms" class="footer-element footer-link">Terms</a>
+    <a href="#privacy" class="footer-element footer-link">Privacy</a>
+    <a href="#contact" class="footer-element footer-link">Contact</a>
+    <p class="light-text footer-element">Copyright 2012, <span>Milestone media</span></p>
+  </footer>
+
+</html>
+
+

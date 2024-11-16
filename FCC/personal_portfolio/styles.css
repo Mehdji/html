@@ -1,0 +1,603 @@
+/*Style sheet for FCC project "Build your own portfolio"*/
+
+
+/*Set color's variable from lighter to darker
+Beware:   '--light' is a kind of red*/
+:root{
+	--lighter: #d9dad7;
+	--light: #c24d2c;
+	--dark: #3e4a61;
+	--darker: #1a2639;
+	
+	--lighter-transparent:  #d9dad766;
+
+}
+
+html{
+	/* Set a font all elements.Font "source code come from google font.*/
+	font-family: source code pro;
+	/* Set default font size for "rem" unit usage later in descendant's elements.*/
+	font-size: 100%; /* font-size: 100% is now equal to 10px.*/	
+	
+	scroll-behavior: smooth;
+	}
+
+/* Basic reset: Include padding and border in height and width of every elements.*/
+::before,
+::after,
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+/*body's height, width and colors*/
+body{
+
+	width: 100%;
+	height: 100%;
+	background-color: var(--darker);
+	color: var(--lighter);
+}
+
+/*header styling*/
+header{
+	width: 100%;
+	height: 5em;
+	margin: auto;
+
+	/* position menu always to top of the page*/
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	
+
+	border-bottom: solid 0.5px black;
+	background-color: var(--lighter);	
+	color: var(--darker);
+	box-shadow: 0.0rem 0.1rem 1rem black;
+	}
+
+#welcome-section{
+	display: flex;
+	margin: auto;
+	height: 100vh;
+	align-items: center;
+
+}
+
+.title{
+	text-align: center;
+	font-size: 2.3rem;
+	letter-spacing: 0.2rem;
+	font-weight: 600;
+	
+	text-shadow: var(--light) 0px 0px 20px;
+ 
+	/*border-top: 2px dashed #c24d2c;
+	border-right: 2px dashed #c24d2c;
+	border-bottom: 2px dashed #c24d2c;
+	border-left: 2px dashed #c24d2c;*/
+	border: 0.05rem solid var(--lighter-transparent);
+	border-radius: 25px;
+
+	position: relative;
+	top: -50px;
+	width: 60%;
+	padding: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: -1;
+
+	box-shadow: 0.2rem 0.2rem 0.1rem var(--lighter-transparent);
+	
+}
+
+/*Section title H1 rules are set below*/
+.section-title{
+
+	text-align: center;
+	width: 30%;
+	
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 0px;
+	margin-bottom: 50px;
+	
+	padding: 0.5rem;
+
+	font-weight: 600;
+	
+	
+	border: 0.2px solid transparent;
+
+	border-radius: 20px;
+	box-shadow: 1px 1px 5px var(--darker);
+
+
+}
+
+/*Rules for span element with class blink
+in the main tile that you see when you land on
+the page.The following rules make letter surrounder by
+the span element blink.It's related to  "@keyframes textanim"
+block*/
+
+.blink{
+
+	animation-name: textanim;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1,end);
+}
+
+/*Rules for letter surrounded by span with the following
+class.Letter are in a kind of white and glowing in white.*/
+.letter-highlight{
+
+	color: var(--light);
+	text-shadow: 0px 0px 10px var(--lighter);
+
+
+}
+
+/*No underline for link in menu
+and darker color of the palette*/
+
+.items > a{
+	text-decoration: none;
+
+	color: var(--darker);
+}
+
+.items > a:visited{
+	text-decoration: none;
+	color: var(--darker);
+}
+.items{
+	margin: 1rem;
+	
+	text-decoration: none;
+	/*transition-property: 
+			text-decoration;*/
+	transition-property: text-shadow 
+						 border-bottom;
+}
+
+/*Red glow cast behind text's link.
+Border underneath act like underline.
+"@keyframes textanim" and transition are
+used to make things more animated*/
+.items > a:hover{
+	
+	text-shadow: 0.2rem 0.2rem 5px var(--light);
+	
+	border-bottom: 0.2rem solid var(--light);
+	transition-duration: 250ms;
+	transition-delay: 20ms;
+	transition-timing-function: ease-in-out;
+	
+	/*The two following block are animations.
+	First-one make menu-title blink
+	Second-one make title menu bigger
+	Both work when mouse hover*/
+
+	/*background-color: var(--darker);
+	animation-name: textanim;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1,end);*/
+
+	/*font-size: 1.2rem;	
+	transition-duration: 100ms;
+	transition-timing-function: linear;
+	text-decoration: underline var(--light);*/
+}
+
+
+
+
+/*Not in use for the moment
+Originally for animated moving 
+menu link underline in navbar
+
+.underline{
+	border-bottom: 0.1rem solid var(--light);
+	width: 20px;
+	position: relative;
+	top: 1rem;	
+
+}
+*/
+
+	
+/*set display in unordered list ,navbar*/
+navbar ul{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+/*No dot in front of list element in menu's navbar*/
+.items{
+	list-style: none;
+}
+
+/*Footer section rules*/
+footer{
+	height: 3rem;
+	width: 100%;
+    
+    padding: 3rem;
+	background-color: var(--darker);
+	color: var(--lighter);
+	display: flex;
+	justify-content: end;
+	align-items: center;
+
+    box-shadow: 0rem 0.2rem 0.8rem black inset; 
+
+}
+/*Sets of rules for <a> whith pseudo-class*/
+footer a:link{
+    text-decoration: none;
+
+    color: var(--lighter);
+}
+
+footer a:visited{
+
+    color: var(--lighter);
+}
+footer a:hover{
+
+    color: var(--lighter);
+}
+
+/*Set of rules making an element blink
+as a terminal's cursor.*/
+@keyframes textanim {
+	0%{
+	color: var(--lighter);
+	
+}
+	50%{
+
+	color: var(--darker);
+	background-color: var(--lighter);
+}
+
+}
+
+/*rules for "projects" section*/
+#projects{
+	
+	width: 100vw;
+	height: 1000px;
+
+	padding-bottom: 100px;
+	padding-top: 100px;
+	padding-left: 200px;
+	padding-right: 200px;
+
+	background-color: var(--lighter);
+	color: var(--darker);
+
+	box-shadow: 0rem 0.4rem 0.8rem var(--dark) inset;
+
+}
+
+/*Set grid display for the div with
+image-tile(projects image link)
+in it*/
+.grid-container{
+	height: 750px;
+
+	display: grid;
+	justify-content: space-evenly;
+	
+	grid-row-gap: 100px;
+		
+	align-content: start;
+	grid-template-columns: 400px 400px ;
+	
+	border: 1px solid red;
+	
+
+
+}
+
+
+/*ask by FCC but not really using it*/
+.project-tile{
+	
+	width: 400px;
+	height: 300px;
+	
+	text-align: center;
+	
+	border: 1px solid red;
+	
+}
+
+/*set rules for image container
+in project section*/
+
+.image-tile{
+	width: 400px;
+	object-fit: cover;
+	box-shadow: 0 0 10px var(--dark);
+	
+
+	border-radius: 10px;
+	/*border: 1px solid green;*/
+}
+/*Set of rule when priject's image are hovered*/
+.project-tile:hover {
+	
+	transform: scale(1.05);
+	transition-property: transform;
+	transition-delay: 50ms;
+	transition-duration: 250ms;
+	transition-timing-function: ease-in-out;
+	.text-label {
+					text-shadow: 0 0 0.5rem var(--light);
+					font-weight: 700;
+					text-decoration: underline var(--light);
+					text-decoration-thickness: 0.1rem;
+					transition-property: text-shadow
+										 font-weight
+										 text-decoration
+										 text-decoration-thickness; 
+					transition-duration: 250ms;
+					transition-delay: 50ms;
+					transition-timing-function: ease-in-out;
+				    };
+
+}
+
+/*Set of rule for picture's text label 
+in project section*/
+.label{
+	height: 2rem;
+	width: 400px;
+
+	position: relative;
+	top: -2.3rem;
+	/*z-index: 2;*/
+	border-radius: 5px 5px;
+	
+	padding-top: 0.25rem;;
+	padding-bottom: auto;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: var(--darker);
+	color: var(--lighter);
+
+	text-decoration: none;
+	
+}
+
+/*Set of rules for text label*/
+.text-label{
+	text-align: center;
+	margin: auto;
+	
+}
+
+/*Set of rules for top menu in header*/
+.menu{
+	display: flex;
+	justify-content: space-evenly;
+	width: 700px;
+
+}
+
+
+/*Set rules for "background" section*/
+#background-section{
+	padding-bottom: 100px;
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+   
+
+
+    box-shadow: 0rem 0.4rem 0.8rem black inset; 
+}
+
+.description{ 
+    text-align: right;
+    font-size: 8rem;
+    color: red;
+}
+
+/*Set of rules for flex-containters.(background-section)
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+
+}*/
+
+/*Set of rules for portrait picture in background section*/
+#user-portrait{
+    height: 11rem;
+    clip-path: circle(50% at 50%);
+    float: left;
+    margin: 0;
+}
+
+.shape{
+    display: inline-block;  
+    /*border: 0.1rem solid red;*/
+    margin-right: 0.9rem;
+    shape-outside: margin-box; 
+    border-radius: 50%;
+    float: left;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--lighter); 
+    vertical-align: top;
+}
+
+/*Set rules for background's section title.
+original rules from section-title has same color
+for shadow than this section backgrund color.
+Following rules set it to a more lighter color.*/
+
+.section-title.background{
+
+	border: 0.2px solid transparent;
+
+	border-radius: 20px;
+	box-shadow: 1px 1px 5px var(--lighter); !important;
+	
+
+
+
+}
+
+/*Set rule for contact section*/
+#contact-section{
+
+	background-color: var(--lighter);
+	color: var(--darker);
+
+	padding-bottom: 100px;
+	padding-top: 100px;
+	padding-left: 200px;
+	padding-right: 200px;
+
+	box-shadow: 0rem 0.4rem 0.8rem var(--dark) inset;
+
+}
+
+/*Set of rules for icons containter(div)*/	
+.icons{
+
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	
+	font-size: 2rem;
+
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 1rem;
+
+}
+
+/*Set social-media link in contact section*/
+
+/*Animate when hovered*/
+/*Same animation than "item" in nav's bar menu*/
+
+.contact-sm:hover{
+		
+	text-shadow: 0.2rem 0.2rem 5px var(--light);
+	
+	border-bottom: 0.2rem solid var(--light);
+	transition-duration: 250ms;
+	transition-delay: 20ms;
+	transition-timing-function: ease-in-out;
+	}
+
+/*Keep same color when visited*/	
+.contact-sm:visited{
+
+	color: var(--darker);
+}
+
+.contact-sm{
+
+	color: var(--darker);
+	text-shadow: 0.1rem 0rem 0.1rem var(--dark);
+}
+
+
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: var(--light);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+/*Set of @media rules to adjust elements size and disposition
+when viewport width is below 1300px width.*/
+@media only screen and (max-width: 1300px){
+
+    .grid-container{
+        grid-template-columns: 400px;
+       
+    }
+   
+    #projects{
+        height: 1850px;
+    } 
+ 
+
+    .section-title{
+
+        font-size: 1.2rem;
+        width: 40%;
+
+    }
+     
+    .title{
+
+        font-size: 1.8rem;
+        width: 90%;
+        padding: 1rem;
+        
+    }
+
+   
+
+     header{
+        justify-content: center;
+
+       
+    }
+    #background-section{
+        padding-bottom: 100px;
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}

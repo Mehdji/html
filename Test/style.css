@@ -1,0 +1,66 @@
+.photo{
+  /* clip-path:  circle(50%); --> */
+  display: block;
+  height: 700px;
+  margin: 50px auto;
+
+
+
+}
+html{
+
+}
+
+.text{
+  border: 2px #002299 dotted;
+  height: 200px;
+  width: 200px;
+  overflow: scroll;
+  margin: auto;
+}
+
+.whitespace{
+
+  font-size: 1.2rem;
+  white-space: pre-line;
+
+}
+
+header{
+
+  background-color: #eaece5;
+  color: #3b3a30;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+}
+
+body{
+  width: 100%;
+  background-color: #3b3a30;
+  color: #eaece5;
+  margin: 0;
+}
+
+
+.list_menu{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.list_menu > li{
+
+  margin: 5px 5px;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.list_menu > li > a{
+  text-decoration: none;
+}
